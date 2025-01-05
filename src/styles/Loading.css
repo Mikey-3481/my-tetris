@@ -1,0 +1,33 @@
+.loading {
+  text-align: center;
+}
+
+.loading > div {
+  margin-top: 20%;
+}
+
+.loading-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.loading-text > h1 {
+  color: #00000085;
+  margin-right: 10px;
+}
+
+.loader {
+  width: 60px;
+  height: 60px;
+  aspect-ratio: 5;
+  background: radial-gradient(circle closest-side, #00000085 90%, #0000) 0/calc(80%/5 + 1px) 100% space;
+  clip-path: inset(0 100% 0 0);
+  animation: l1 2s steps(6) infinite;
+}
+
+@keyframes l1 {
+  to {
+    clip-path: inset(0 -22% 0 0);
+  }
+}
